@@ -17,7 +17,7 @@ export const StateContextProvider = ({ children }) => {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
-        'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
+        'X-RapidAPI-Key': '63f556ab0fmsh04193509119c204p113432jsn79d3e4d7b92f',
         'X-RapidAPI-Host': 'google-api31.p.rapidapi.com'
       },
       body: JSON.stringify(postData),
