@@ -33,7 +33,7 @@ This is a Google Search Clone app built with React.js, JavaScript, and Tailwind 
   ```
 4. Open your browser and navigate to http://localhost:3000 to view the app.
 
-#API Configuration
+## API Configuration
 
 Visit RapidAPI to obtain your API key. Replace the placeholder in the code with your actual API key.
 
@@ -48,7 +48,7 @@ const options = {
 };
 ```
 
-##ScreenShots
+## ScreenShots
 
 ![image](https://github.com/Yash-Panchal-521/google-search-clone/assets/92858465/ce95247a-fe04-4e56-8683-c8c9d5389d87)
 ![image](https://github.com/Yash-Panchal-521/google-search-clone/assets/92858465/8572bacd-3236-49da-a9a9-353a44fa4de1)
