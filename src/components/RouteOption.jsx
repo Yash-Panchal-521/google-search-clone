@@ -6,11 +6,10 @@ const RouteOption = () => {
   return (
     <div className="p-4">
       <Routes>
-        <Route exact path='/' element={<Navigate to='/search' />} />
-        <Route path='/search' element={<Results />} />
-        <Route path='/images' element={<Results />} />
-        <Route path='/news' element={<Results />} />
-        <Route path='/videos' element={<Results />} />
+        <Route exact path='/' element={<Navigate to='/websearch' />} />
+        <Route path='/websearch' element={<Results />} />
+        <Route path='/imagesearch' element={<Results />} />
+        <Route path='/videosearch' element={<Results />} />
       </Routes>
     </div>
   )

@@ -1,33 +1,38 @@
 // StateContextProvider.jsx
-
 import React, { createContext, useContext, useState } from 'react';
 
 const StateContext = createContext();
 
-const baseUrl = 'https://real-time-web-search.p.rapidapi.com';
-const options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': '0021d30470msh5d124867a07671bp137071jsn49da2a79f549',
-    'X-RapidAPI-Host': 'real-time-web-search.p.rapidapi.com',
-  },
-};
+const baseUrl = 'https://google-api31.p.rapidapi.com';
 
 export const StateContextProvider = ({ children }) => {
-  const [results, setResults] = useState([]); // Initialize results as an empty array
+  const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const getResults = async (url) => {
+  const getResults = async (url, postData) => {
     setLoading(true);
 
-    const res = await fetch(`${baseUrl}${url}`, options);
+    const options = {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
+        'X-RapidAPI-Host': 'google-api31.p.rapidapi.com'
+      },
+      body: JSON.stringify(postData),
+    };
 
-    const data = await res.json();
-    console.log(data);
+    try {
+      const res = await fetch(`${baseUrl}${url}`, options);
+      const data = await res.json();
 
-    setResults(data.results); // Assuming the results property is an array in the response
-    setLoading(false);
+      setResults(data);
+      setLoading(false);
+    } catch (error) {
+      console.error(error);
+      setLoading(false);
+    }
   };
 
   return (
