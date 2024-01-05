@@ -47,4 +47,15 @@ const options = {
   }
 };
 ```
+
+##ScreenShots
+
+![image](https://github.com/Yash-Panchal-521/google-search-clone/assets/92858465/ce95247a-fe04-4e56-8683-c8c9d5389d87)
+![image](https://github.com/Yash-Panchal-521/google-search-clone/assets/92858465/8572bacd-3236-49da-a9a9-353a44fa4de1)
+![image](https://github.com/Yash-Panchal-521/google-search-clone/assets/92858465/290997b8-59c9-4bfa-af57-229e8a06cb92)
+![image](https://github.com/Yash-Panchal-521/google-search-clone/assets/92858465/53438d4f-13c0-4600-bd45-96c1eceaa068)
+![image](https://github.com/Yash-Panchal-521/google-search-clone/assets/92858465/98a77e25-5f60-47c0-8027-47ac71f183d6)
+
+
+
  
